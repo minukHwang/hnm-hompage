@@ -4,10 +4,11 @@ import { faUser } from "@fortawesome/free-regular-svg-icons";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({authenticate, setAuthenticate}) => {
     const navigate = useNavigate();
     const goToLogin = () => {
         navigate("/login");
+        setAuthenticate(false);
     };
     const goToMain = () => {
         navigate("/");
@@ -36,7 +37,7 @@ const Navbar = () => {
                     <div className="login-icon">
                         <FontAwesomeIcon icon={faUser} />
                     </div>
-                    <div>로그인</div>
+                    <div>{!authenticate?"로그인":"로그아웃"}</div>
                 </div>
             </div>
             <div className="logo" onClick={goToMain}>
