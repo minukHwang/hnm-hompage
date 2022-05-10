@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+.login-button{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 20px;
+  cursor: pointer;
+}
+.login-icon{
+  margin: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* .main{
+  background-color: blue;
+} */
+
+.logo{
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.menu-list{
+  display: flex;
+  list-style-type: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.menu-list li{
+  padding: 10px;
+}
+
+.menu-area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-box{
+  margin: 0 5px;
+  border: none;
+}
+
+.input-box:focus{
+  outline: none;
+}
+
+.search-area{
+  right: 20px;
+  position: absolute;
+  display: flex;
+  border-bottom: 1px solid black;
+}
+
+.item-img{
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.img-card{
+  border: none;
+  margin-bottom: 20px;
+  transition: 0.2s;
+}
+
+.img-card:hover{
+  transform: scale(1.1);
+  z-index: 1;
+  background-color: white;
+}
+
+.login{
+  max-width: 700px;
+}
+
+.product-img{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.product-img img{
+  width: 70%;
+}
+
+.detail-area{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.detail-area button{
+  margin-top: 20px;
+  width: 70%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.drop-down{
+  width: 30%;
 }
