@@ -1,78 +1,41 @@
-.Nav{
-  display: flex;
-  flex-direction: column;
-}
-.login-button-area{
-  display: flex;
-  margin: 20px;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .login-button{
   display: flex;
+  justify-content: flex-end;
   align-items: center;
+  margin: 20px;
   cursor: pointer;
 }
-
-.user-icon{
-  display: flex;
-  padding: 10px;
+.login-icon{
+  margin: 5px;
 }
 
-.logo-area{
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
+/* .main{
+  background-color: blue;
+} */
 
 .logo{
-  background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/H%26M-Logo.svg/800px-H%26M-Logo.svg.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 90px;
-  width: 150px;
+  display: flex;
+  justify-content: center;
   cursor: pointer;
 }
 
-.menu{
-  padding: 0;
-  margin: 10px 0px;
+.menu-list{
   display: flex;
   list-style-type: none;
-  cursor: pointer;
 }
 
-.menu-item{
+.menu-list li{
   padding: 10px;
 }
 
 .menu-area{
   display: flex;
-  align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
-}
-
-.search-area{
-  display: flex;
   align-items: center;
-  position: absolute;
-  right: 20px;
-}
-
-.search-area div{
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid black;
-}
-
-.search-icon{
-  padding: 5px 5px 7px 0px;
 }
 
 .input-box{
+  margin: 0 5px;
   border: none;
 }
 
@@ -80,113 +43,55 @@
   outline: none;
 }
 
-.item-card{
+.search-area{
+  right: 20px;
+  position: absolute;
   display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-  cursor: pointer;
-}
-
-.item-card:hover{
-  transform: scale(1.1);
-  background-color: white;
-  transition: 0.3s;
+  border-bottom: 1px solid black;
 }
 
 .item-img{
+  display: flex;
   width: 100%;
+  justify-content: flex-end;
 }
 
-.login-area{
+.img-card{
+  border: none;
+  margin-bottom: 20px;
+  transition: 0.2s;
+}
+
+.img-card:hover{
+  transform: scale(1.1);
+  z-index: 1;
+  background-color: white;
+}
+
+.login{
   max-width: 700px;
-  margin-top: 20px;
 }
 
-.item-image{
+.product-img{
   display: flex;
   justify-content: flex-end;
 }
 
-.item-image img{
+.product-img img{
+  border : none;
   width: 70%;
 }
 
-.info-area{
+.detail-area{
   display: flex;
   flex-direction: column;
+}
+
+.detail-area button{
+  margin-top: 20px;
+  width: 70%;
 }
 
 .drop-down{
-  margin-top: 20px;
-}
-
-.add-to-cart {
-  margin-top: 20px;
-  width: 60%;
-}
-
-.hide{
-  visibility: hidden;
-}
-
-.mobile-menu {
-  cursor: pointer;
-  padding: 20px;
-}
-
-
-@media screen and (max-width: 80rem){
-  .hide{
-    visibility: visible;
-  }
-  .menu{
-    display: none;
-  }
-  .search-area{
-    display: none;
-  }
-
-}
-.menu-button-area{
-  margin-top: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.menu-button{
-  margin: 5px;
-  border: none;
-  background: none;
-  width: 120px;
-}
-
-.menu-button:hover{
-  background-color: brown;
-  border-radius: 3px;
-  color: white;
-}
-
-.close-button{
-  position: absolute;
-  top: 0;
-  right: 25px;
-  margin-left: 50px;
-  border: none;
-  background: none;
-  font-size: 36px;
-}
-
-.side-menu{
-  height: 100%;
-  width: 250px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: white;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 6px;
-  z-index: 2;
+  width: 30%;
 }
